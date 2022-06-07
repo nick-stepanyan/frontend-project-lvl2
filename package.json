@@ -1,0 +1,30 @@
+{
+    "name": "@hexlet/code",
+    "version": "1.0.0",
+    "description": "My second project",
+    "bin": {
+        "gendiff": "bin/gendiff.js"
+    },
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nick-stepanyan/frontend-project-lvl2.git"
+    },
+    "author": "Nick",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/nick-stepanyan/frontend-project-lvl2/issues"
+    },
+    "homepage": "https://github.com/nick-stepanyan/frontend-project-lvl2#readme",
+    "dependencies": {
+        "commander": "^9.3.0"
+    },
+    "devDependencies": {
+        "eslint": "^8.17.0",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-plugin-import": "^2.26.0"
+    }
+}
