@@ -2,6 +2,7 @@
     "name": "@hexlet/code",
     "version": "1.0.0",
     "description": "My second project",
+    "type": "module",
     "bin": {
         "gendiff": "bin/gendiff.js"
     },
@@ -20,7 +21,8 @@
     },
     "homepage": "https://github.com/nick-stepanyan/frontend-project-lvl2#readme",
     "dependencies": {
-        "commander": "^9.3.0"
+        "commander": "^9.3.0",
+        "lodash": "^4.17.21"
     },
     "devDependencies": {
         "eslint": "^8.17.0",
