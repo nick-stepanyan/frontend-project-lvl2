@@ -37,4 +37,4 @@ gendiff [options] <path/to/file1> <path/to/file2>
 
 ## Running the compare 2 json files command.
 
-[![asciicast](https://asciinema.org/a/480825.svg)](https://asciinema.org/a/480825)
+[![asciicast](https://asciinema.org/a/gZpDVLtgUGOdvfF5VbRKnG0EV)
