@@ -12,7 +12,7 @@ Difference calculator is a program with command-line interface (CLI) that genera
 
 1. Tilt the repository:
 ```
-  git clone git@github.com:TheKr1d/frontend-project-lvl2.git
+  git clone git@github.com:nick-stepanyan/frontend-project-lvl2.git
 ```
 2. Establish a dependency:
 ```
