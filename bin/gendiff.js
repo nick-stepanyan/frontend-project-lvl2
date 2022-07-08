@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
 import { Command } from 'commander';
+// eslint-disable-next-line import/extensions
 import genDiff from '../src/index.js';
 
 const program = new Command();
-
 program.name('gendiff')
   .description('Compares two configuration files and shows a difference.')
   .version('0.1.0', '-V, --version', 'output the version number')
@@ -12,6 +12,7 @@ program.name('gendiff')
   .arguments('<filepath1>', 'path to file1')
   .arguments('<filepath2>', 'path to file2')
   .action((filepath1, filepath2) => {
+    // eslint-disable-next-line no-console
     console.log(genDiff(filepath1, filepath2));
   });
 program.parse(process.argv);
