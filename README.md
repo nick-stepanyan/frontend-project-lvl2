@@ -51,3 +51,7 @@ The json and yaml formats have a recursive structure. In other words, a value on
 ## Flat Format
 
 [![asciicast](https://asciinema.org/a/Cm1qhLfZ8Hf0Rim95t8UJwrZx.svg)](https://asciinema.org/a/Cm1qhLfZ8Hf0Rim95t8UJwrZx)
+
+## Output to json
+
+[![asciicast](https://asciinema.org/a/d5q0gy1PHkNSHd8J9HrcBBTo9.svg)](https://asciinema.org/a/d5q0gy1PHkNSHd8J9HrcBBTo9)
