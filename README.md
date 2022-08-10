@@ -50,4 +50,4 @@ The json and yaml formats have a recursive structure. In other words, a value on
 
 ## Flat Format
 
-[![asciicast](https://asciinema.org/a/GI4pCf85kcyxkqqkanyWqIyEc.svg)](https://asciinema.org/a/GI4pCf85kcyxkqqkanyWqIyEc)
+[![asciicast](https://asciinema.org/a/Cm1qhLfZ8Hf0Rim95t8UJwrZx.svg)](https://asciinema.org/a/Cm1qhLfZ8Hf0Rim95t8UJwrZx)
