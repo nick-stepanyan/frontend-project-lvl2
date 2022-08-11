@@ -42,3 +42,16 @@ gendiff [options] <path/to/file1> <path/to/file2>
 ## Comparison of flat files (yaml):
 
 [![asciicast](https://asciinema.org/a/IN9ntO05zh6dKb5BZyWr9bVxg.svg)](https://asciinema.org/a/IN9ntO05zh6dKb5BZyWr9bVxg)
+
+## Recursive comparison
+The json and yaml formats have a recursive structure. In other words, a value on a certain key itself can be a json or a yaml.
+
+[![asciicast](https://asciinema.org/a/GI4pCf85kcyxkqqkanyWqIyEc.svg)](https://asciinema.org/a/GI4pCf85kcyxkqqkanyWqIyEc)
+
+## Flat Format
+
+[![asciicast](https://asciinema.org/a/Cm1qhLfZ8Hf0Rim95t8UJwrZx.svg)](https://asciinema.org/a/Cm1qhLfZ8Hf0Rim95t8UJwrZx)
+
+## Output to json
+
+[![asciicast](https://asciinema.org/a/d5q0gy1PHkNSHd8J9HrcBBTo9.svg)](https://asciinema.org/a/d5q0gy1PHkNSHd8J9HrcBBTo9)

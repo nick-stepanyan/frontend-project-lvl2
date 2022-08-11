@@ -40,7 +40,7 @@ jobs:
       #   uses: paambaati/codeclimate-action@v3
       #   # Add Code Climate secret key
       #   env:
-      #     ADD_CODE_CLIMATE_SECRET_KEY: ${{ secrets.ADD_CODE_CLIMATE_SECRET_KEY }}
+      #     ADD_CODE_CLIMATE_SECRET_KEY: ${{ secrets.CODECLIMATE_ID }}
       #   with:
       #     coverageCommand: make test-coverage
       #     debug: true
