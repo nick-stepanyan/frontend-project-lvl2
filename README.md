@@ -2,6 +2,7 @@
 [![Actions Status](https://github.com/nick-stepanyan/frontend-project-lvl2/workflows/hexlet-check/badge.svg)](https://github.com/nick-stepanyan/frontend-project-lvl2/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/082f8dd87e9c505756d8/maintainability)](https://codeclimate.com/github/nick-stepanyan/frontend-project-lvl2/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/082f8dd87e9c505756d8/test_coverage)](https://codeclimate.com/github/nick-stepanyan/frontend-project-lvl2/test_coverage)
+[![run bug fix](https://github.com/nick-stepanyan/frontend-project-lvl2/actions/workflows/nodejs.yml/badge.svg)](https://github.com/nick-stepanyan/frontend-project-lvl2/actions/workflows/nodejs.yml)
 # Difference calculator
 Difference calculator is a program with command-line interface (CLI) that generates a difference between two data structures or configuration files. Performs the following operations: reading files, parsing incoming data, building a tree of differences, forming the necessary output. The algorithm is based on tree recursion.
 
