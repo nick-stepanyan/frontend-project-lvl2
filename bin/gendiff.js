@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 import { Command } from 'commander';
-// eslint-disable-next-line import/extensions
 import genDiff from '../src/index.js';
 
 const program = new Command();
@@ -13,7 +12,6 @@ program
   .option('-f, --format <type>', 'output format', 'stylish')
   .arguments('<filepath1> <filepath2>')
   .action((filepath1, filepath2, options) => {
-    // eslint-disable-next-line no-console
     console.log(genDiff(filepath1, filepath2, options.format));
   });
 
