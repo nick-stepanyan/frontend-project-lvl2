@@ -1,25 +1,20 @@
-name: Lint
+name: Node CI
 
-# Trigger the workflow on push or pull request
 on:
-  - push
-  - pull_request
-
-env:
-  CI: true
+ - push
+ - pull_request
 
 jobs:
-  build:
+ build:
+  runs-on: ubuntu-latest
 
-    # The type of machine to run the job on
-    runs-on: ubuntu-latest
-
-    strategy:
-      # Node versions list
-      matrix:
+  strategy:
+      # Node versions
+   matrix:
         node-version: [16.14.2]
 
-     steps:
+     
+  steps:
       - uses: actions/checkout@v2
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
@@ -33,12 +28,10 @@ jobs:
       - name: Run linter
         run: |
           make lint
-          
-       - name: Test & publish code coverage      
-         uses: paambaati/codeclimate-action@v3
-         Add Code Climate secret key
-       env:
-           ADD_CODE_CLIMATE_SECRET_KEY: ${{ secrets.CODECLIMATE_ID }}
-        with:
+      - name: Test & publish code coverage
+        uses: paambaati/codeclimate-action@v2.7.4
+        env:
+           ADD_CODE_CLIMATE_SECRET_KEY: ${{ secrets.ADD_CODE_CLIMATE_SECRET_KEY }}
+       with:
           coverageCommand: make test-coverage
-         debug: true
+          debug: true
