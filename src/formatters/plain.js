@@ -22,7 +22,7 @@ const plain = (diff) => {
                 case 'nested':
                     return iter(data.value, [...path, data.name]);
                 case 'unchanged':
-                    return;
+                    return null;
                 default:
                     throw new Error(`Unknown state: '${data.type}'!`);
             }
