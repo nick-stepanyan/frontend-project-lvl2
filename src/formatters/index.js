@@ -2,7 +2,7 @@ import stylish from './stylish.js';
 import plain from './plain.js';
 
 
-const formatOutput = (diff, type = 'stylish') => {
+const formatOutput = (diff, type) => {
     switch (type) {
         case 'plain':
             return plain(diff);

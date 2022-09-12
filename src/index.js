@@ -5,7 +5,8 @@ import buildDiff from './diffGenerator.js';
 import formatOutput from './formatters/index.js';
 
 const readFileData = (filepath) => readFileSync(path.resolve(process.cwd(), filepath));
-const getExtension = (filepath) => path.extname(filepath);
+const getPathExtension = path.extname;
+const getExtension = (filepath) => getPathExtension(filepath);
 const getData = (filepath) => {
     const expansion = getExtension(filepath).slice(1);
     return parseData(readFileData(filepath), expansion);
