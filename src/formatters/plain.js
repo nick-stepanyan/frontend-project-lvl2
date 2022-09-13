@@ -27,7 +27,7 @@ const plain = (diff) => {
           throw new Error(`Unknown state: '${data.type}'!`);
       }
     });
-    _.compact(result).join('\n');
+    return _.compact(result).join('\n');
   };
   return `${iter(diff, [])}`;
 };
