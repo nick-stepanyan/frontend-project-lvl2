@@ -19,7 +19,6 @@ describe('Gendiff_test', () => {
   test.each(['json', 'yml'])('calculate differences', (extenshion) => {
     const filepath1 = getFixturePath(`file1.${extenshion}`);
     const filepath2 = getFixturePath(`file2.${extenshion}`);
-
     expect(genDiff(filepath1, filepath2)).toEqual(stylishResult);
     expect(genDiff(filepath1, filepath2, 'stylish')).toEqual(stylishResult);
     expect(genDiff(filepath1, filepath2, 'plain')).toEqual(plainResult);

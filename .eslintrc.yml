@@ -1,5 +1,4 @@
 ---
-
 # https://github.com/jest-community/eslint-plugin-jest
 plugins:
   - jest
@@ -32,4 +31,4 @@ rules:
   fp/no-mutating-methods:
     - error
     - allowedObjects:
-      - "_"
+        - "_"
