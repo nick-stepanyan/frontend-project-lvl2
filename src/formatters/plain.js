@@ -20,7 +20,7 @@ const plain = (diff) => {
         case 'changed':
           return `Property '${getPath(path, data.name)}' was updated. From ${stringify(data.value1)} to ${stringify(data.value2)}`;
         case 'nested':
-          return iter(data.value, [...path, data.name]);
+          return `${iter(data.children, [...path, data.name])}`;
         case 'unchanged':
           return null;
         default:

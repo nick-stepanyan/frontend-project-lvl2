@@ -23,9 +23,9 @@ const stylish = (diff) => {
         case 'unchanged':
           return `${currentIndent(depth)}  ${data.name}: ${stringify(data.value, depth + 1)}`;
         case 'changed':
-          return `${currentIndent(depth)}- ${data.name}: ${stringify(data.value1, depth + 1)}\n${currentIndent(depth)}+ ${data.name}: ${stringify(data.value2, depth + 1)}`;
+          return [`${currentIndent(depth)}- ${data.name}: ${stringify(data.value1, depth + 1)}`, `${currentIndent(depth)}+ ${data.name}: ${stringify(data.value2, depth + 1)}`].join('\n');
         case 'nested':
-          return `${currentIndent(depth)}  ${data.name}: {\n${iter(data.value, depth + 1)}\n  ${currentIndent(depth)}}`;
+          return `${currentIndent(depth)}  ${data.name}: {\n${iter(data.children, depth + 1)}\n  ${currentIndent(depth)}}`;
         default:
           throw new Error(`Unknown state: '${data.type}'!`);
       }
@@ -34,4 +34,5 @@ const stylish = (diff) => {
   };
   return `{\n${iter(diff, 1)}\n}`;
 };
+
 export default stylish;

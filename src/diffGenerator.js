@@ -13,7 +13,7 @@ const buildDiff = (data1, data2) => {
       return {
         name: key,
         type: 'nested',
-        value: buildDiff(data1[key], data2[key]),
+        children: buildDiff(data1[key], data2[key]),
       };
     }
     if (_.isEqual(data1[key], data2[key])) {
