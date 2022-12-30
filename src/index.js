@@ -5,12 +5,8 @@ import buildDiff from './diffGenerator.js';
 import formatOutput from './formatters/index.js';
 
 const readFileData = (filepath) => readFileSync(path.resolve(process.cwd(), filepath));
-const getPathExtension = path.extname;
-const getExtension = (filepath) => getPathExtension(filepath);
-const getData = (filepath) => {
-  const expansion = getExtension(filepath).slice(1);
-  return parseData(readFileData(filepath), expansion);
-};
+const getExtension = (filepath) => path.extname(filepath);
+const getData = (filepath) => parseData(readFileData(filepath), getExtension(filepath).slice(1));
 
 const genDiff = (filepath1, filepath2, format = 'stylish') => {
   const diff = buildDiff(getData(filepath1), getData(filepath2));
